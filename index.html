@@ -11,21 +11,30 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
     <!-- Custom Css -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily:{
+              Garamond:["EB Garamond", "serif"]
+            },
             colors: {
               clifford: "#da373d",
               colorP: "#B68C5A",
+              
             },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-Garamond">
     <header>
       <nav class="mx-8 sm:mx-16 md:mx-20 my-2">
         <div class="navbar bg-base-100">
